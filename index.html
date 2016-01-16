@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>DMX Mapper</title>
+        <meta charset="UTF-8">
+        <script src="./Sortable.min.js" type="text/javascript"></script>
+        <script src="./lights.js" type="text/javascript"></script>
+        <script src="./DMXMapper.js" type="text/javascript"></script>
+        
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="headerWrapper">
+                <h1>DMX Light Mapper</h1>
+            </div>
+            
+        </div>
+        <div id="wrapper">
+            <div id="DMXUniverseWrapper">
+                <div id="DMXUniverse">
+                    <ul id="DMXUniverseList">
+                        
+                    </ul>
+                </div>
+                <div id="DMXUniverse">
+                    <div class="summeryItem">
+                        <p><strong>Statistics</strong></p>
+                    </div>
+                    <div class="summeryItem">
+                        <p>Number of Lights in Universe: </p>
+                        <p id="TotNumLights" class="summeryItemoutput">0</p>
+                    </div>
+                    <div class="summeryItem">
+                        <p>Total channels used: </p>
+                        <p id="ChUsed" class="summeryItemoutput">0</p>
+                    </div>
+                    <div class="summeryItem">
+                        <p>Total power (light) output (Watts): </p>
+                        <p id="POWatts" class="summeryItemoutput">0</p>
+                    </div>
+                    <div class="summeryItem">
+                        <p>Total maximum power consumption (Watts): </p>
+                        <p id="PCWatts" class="summeryItemoutput">0</p>
+                    </div>
+                    <div class="summeryItem">
+                        <p>Total maximum power consumption at 240v (Amps): </p>
+                        <p id="PCAmps" class="summeryItemoutput">0</p>
+                    </div>
+                </div>
+            </div>
+            <div id="lightsMenuWrapper">
+                <div id="lightsMenu">
+                    <ul id="lightsMenuList">
+                        
+                    </ul>
+                </div>
+            </div>        
+        </div>
+    </body>
+</html>
