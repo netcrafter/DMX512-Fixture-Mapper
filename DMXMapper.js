@@ -187,18 +187,19 @@ function addLightToUniverse(event) {
     /*  Adds up the number of channels being used by all the lights including the light which was just added.*/
     var channels = 0;
     var parentList = event.item.parentNode;
-    for (var i = 0; i < parentList.getElementsByTagName("li").length; i++) {
-        channels = channels + parseInt(parentList.getElementsByTagName("li")[i].getAttribute("data-dmxChannels"));
+    var childLi = parentList.getElementsByTagName("li");
+    for (var i = 0; i < childLi.length; i++) {
+        channels += parseInt(childLi[i].getAttribute("data-dmxChannels"));
     };
 
-    /* if the number of channels used is greater than 511 then it removed the light from the universe
+    /* If the number of channels used is greater than 512 then remove the light from the universe
        because a universe can only have 2^9 channels. Also alert the user to let them know they can't
-       add any more lights
+       add any more fixtures to the current universe.
     */
-    if (channels > 511) {
-        console.log(event.item);
+    if (channels > 512) {
         parentList.removeChild(event.item);
-        alert("You can\'t add any more lights to this universe because it\'s full. You only have 511 channels per universe.");
+        renderUniverse(parentList);
+        alert("You can\'t add any more fixtures to this universe because it\'s full. You can use a maximum of 512 channels per universe.");
     };
 
 }
