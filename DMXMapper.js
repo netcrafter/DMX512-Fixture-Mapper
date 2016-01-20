@@ -1,4 +1,4 @@
-/* Copyright (c) 2015 Adam Simpson */
+/* Copyright (c) 2015 Adam Simpson - MIT License - See README.md */
 document.addEventListener("DOMContentLoaded", function(event) { 
     
     /* Render lights list */
