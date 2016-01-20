@@ -11,8 +11,10 @@ This application uses the [Sortable](https://github.com/rubaxa/sortable)
 library by [Lebedev Konstantin (RubaXa)](https://github.com/RubaXa).
 
 ###Usage
-Clone repository and open index.html in your favourite browser.
-Currently tested to work in Firefox and Chrome.
+[Use online](https://netcrafter.github.io/DMX512-Fixture-Mapper/)
+or clone the repository and open index.html in your favourite
+web browser.
+Tested to work in the latest versions of Firefox and Chrome.
 
 ###Todo
 - Ability to add different fixtures.
